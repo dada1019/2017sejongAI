@@ -8,13 +8,13 @@ written text는 말의 억양을 표현하지 못하기 때문에, 사람들은 
 
 결과
 
-original
+-- original
 Review: 
 You should definitely watch if you are a true fan of Spider-Man and Marvel. There is no doubt that Tobey Maguire was a better actor.
 Predicted sentiment: Positive
 Probability: 0.69
 
-test
+-- test
 Review: 
 You should definitely watch if you are a true fan of Spider-Man and Marvel!!!There is no doubt that Tobey Maguire was a better actor!!!
 Predicted sentiment: Positive
@@ -46,25 +46,25 @@ Probability: 0.69
 
 결과
 
-original (negative)
+-- original (negative)
 Review:  
 Homecoming was TERRIBLE and by far the worst spider-man film. This movie was a HUGE set back for Spiderman but sadly we live in a very tight lip controlled marvel press.
 Predicted sentiment: Negative
 Probability: 0.85
 
-test
+-- test
 Review:  
 Homecoming was terrible and by far the worst spider-man film. This movie was a huge set back for Spiderman but sadly we live in a very tight lip controlled marvel press
 Predicted sentiment: Negative
 Probability: 0.96
 
-original (positive)
+-- original (positive)
 Review: 
 You will enjoy EVERY single minute of this movie, Tom Holland is DEFINITELY the BEST peter Parker and Spider-Man we have ever seen.
 Predicted sentiment: Negative
 Probability: 0.51
 
-test
+-- test
 Review: 
 You will enjoy every single minute of this movie, Tom Holland is definitely the best peter Parker and Spider-Man we have ever seen.
 Predicted sentiment: Positive

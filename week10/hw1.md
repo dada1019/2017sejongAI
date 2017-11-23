@@ -80,8 +80,8 @@ Review:
 Review: 
 "You will enjoy EVERY single minute of this movie, Tom Holland is DEFINITELY the BEST peter Parker and Spider-Man we have ever seen."
 
-   *Predicted sentiment: Negative
-   
+   *Predicted sentiment: Positive
+  
    *Probability: 0.51
 
 -- test
@@ -92,7 +92,7 @@ Review:
    
    *Probability: 0.7
 
--> 감정을 나타내는 수식어구를 대문자로 사용해서 강조했을 때와 강조하지 않았을 때 서로 다른 probability를 보여주는 것으로 보아, nltk 감정분석기는 대문자를 인식해서 판단한다. 다만, 사람의 의도와는 다르게 대문자를 강조로 보지 않는 것 같다. 긍정일 경우와 부정일 경우 모두 대문자를 사용한 original text의 probability가 더 낮게 나왔기 때문이다. 글쓴이의 의도에 따르면 “Homecoming was TERRIBLE."이 "Homecoming was terrible."보다 terrible을 강조한 것으로, 앞문장의 probability가 더 높아야 하지만 반대의 경우가 도출되었기 때문이다. 심지어 3번째 문장인 positive의 경우, 0.51로 neutral하다는 판단을 내릴 정도로 오차가 크다.
+-> 감정을 나타내는 수식어구를 대문자로 사용해서 강조했을 때와 강조하지 않았을 때 서로 다른 probability를 보여주는 것으로 보아, nltk 감정분석기는 대문자를 인식해서 판단한다. 다만, 사람의 의도와는 다르게 대문자를 강조로 보지 않는 것 같다. 긍정일 경우와 부정일 경우 모두 대문자를 사용한 original text의 probability가 더 낮게 나왔기 때문이다. 글쓴이의 의도에 따르면 “Homecoming was TERRIBLE."이 "Homecoming was terrible."보다 terrible을 강조한 것으로, 앞문장의 probability가 더 높아야 하지만 반대의 경우가 도출되었다. 심지어 3번째 문장인 positive의 경우, 0.51로 neutral하다는 판단을 내릴 정도로 오차가 크다.
 
 
      가설 3. 순위에 나오는 형용사가 많이 나올수록 probability가 높을 것이다.

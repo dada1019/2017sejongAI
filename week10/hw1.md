@@ -10,28 +10,28 @@ written text는 말의 억양을 표현하지 못하기 때문에, 사람들은 
 
 -- original
 Review: 
-You should definitely watch if you are a true fan of Spider-Man and Marvel. There is no doubt that Tobey Maguire was a better actor.
+"You should definitely watch if you are a true fan of Spider-Man and Marvel. There is no doubt that Tobey Maguire was a better actor."
 Predicted sentiment: Positive
 Probability: 0.69
 
 -- test
 Review: 
-You should definitely watch if you are a true fan of Spider-Man and Marvel!!!There is no doubt that Tobey Maguire was a better actor!!!
+"You should definitely watch if you are a true fan of Spider-Man and Marvel!!!There is no doubt that Tobey Maguire was a better actor!!!"
 Predicted sentiment: Positive
 Probability: 0.69
 
 Review: 
-You should definitely watch if you are a true fan of Spider-Man and Marvel~ There is no doubt that Tobey Maguire was a better actor~
+"You should definitely watch if you are a true fan of Spider-Man and Marvel~ There is no doubt that Tobey Maguire was a better actor~"
 Predicted sentiment: Positive
 Probability: 0.69
 
 Review: 
-You should definitely watch if you are a true fan of Spider-Man and Marvel:)There is no doubt that Tobey Maguire was a better actor:)
+"You should definitely watch if you are a true fan of Spider-Man and Marvel:)There is no doubt that Tobey Maguire was a better actor:)"
 Predicted sentiment: Positive
 Probability: 0.69
 
 Review: 
-You should definitely watch if you are a true fan of Spider-Man and Marvel:< There is no doubt that Tobey Maguire was a better actor:(
+"You should definitely watch if you are a true fan of Spider-Man and Marvel:< There is no doubt that Tobey Maguire was a better actor:("
 Predicted sentiment: Positive
 Probability: 0.69
 
@@ -48,25 +48,25 @@ Probability: 0.69
 
 -- original (negative)
 Review:  
-Homecoming was TERRIBLE and by far the worst spider-man film. This movie was a HUGE set back for Spiderman but sadly we live in a very tight lip controlled marvel press.
+"Homecoming was TERRIBLE and by far the worst spider-man film. This movie was a HUGE set back for Spiderman but sadly we live in a very tight lip controlled marvel press."
 Predicted sentiment: Negative
 Probability: 0.85
 
 -- test
 Review:  
-Homecoming was terrible and by far the worst spider-man film. This movie was a huge set back for Spiderman but sadly we live in a very tight lip controlled marvel press
+"Homecoming was terrible and by far the worst spider-man film. This movie was a huge set back for Spiderman but sadly we live in a very tight lip controlled marvel press"
 Predicted sentiment: Negative
 Probability: 0.96
 
 -- original (positive)
 Review: 
-You will enjoy EVERY single minute of this movie, Tom Holland is DEFINITELY the BEST peter Parker and Spider-Man we have ever seen.
+"You will enjoy EVERY single minute of this movie, Tom Holland is DEFINITELY the BEST peter Parker and Spider-Man we have ever seen."
 Predicted sentiment: Negative
 Probability: 0.51
 
 -- test
 Review: 
-You will enjoy every single minute of this movie, Tom Holland is definitely the best peter Parker and Spider-Man we have ever seen.
+"You will enjoy every single minute of this movie, Tom Holland is definitely the best peter Parker and Spider-Man we have ever seen."
 Predicted sentiment: Positive
 Probability: 0.7
 
@@ -100,17 +100,17 @@ Top 15 most informative words:
 결과
 
 Review: 
-Homecominig is such an outstanding movie. Its story is fascinating. Every single acting was astounding.
+"Homecominig is such an outstanding movie. Its story is fascinating. Every single acting was astounding."
 Predicted sentiment: Positive
 Probability: 0.94
 
 Review: 
-The story was ludicrous and idiotic. Each scean does not connect to each other. It even seemed insulting.
+"The story was ludicrous and idiotic. Each scean does not connect to each other. It even seemed insulting."
 Predicted sentiment: Negative
 Probability: 0.84
 
 Review: 
-It is a fascinating movie, yet the story line is ludicrous.
+"It is a fascinating movie, yet the story line is ludicrous."
 Predicted sentiment: Positive
 Probability: 0.75
 

@@ -1,0 +1,42 @@
+표제화를 통해 단어를 기본형으로 변형하기
+
+
+#코드
+#Spyder 사용했습니다
+
+from nltk import *
+
+#패키지 호출
+from nltk.stem import WordNetLemmatizer
+#사용할 단어 입력
+input_words = ['writing', 'calves', 'be', 'branded', 'horse', 'randomize', 'possibly', 'provision', 'hospital', 'kept', 'scratchy',
+'code']
+#표제화(Lemmatizer) 객체 생성
+lemmatizer = WordNetLemmatizer()
+#출력을 위한 문자열 포맷 정의
+lemmatizer_names = ['NOUN LEMMATIZER', 'VERB LEMMATIZER']
+formatted_text = '{:>24}' * (len(lemmatizer_names) + 1)
+print('\n', formatted_text.format('INPUT WORD', *lemmatizer_names), '\n', '='*75)
+#단어별 명사, 동사 표제화 적용
+for word in input_words:
+    output = [word, lemmatizer.lemmatize(word, pos='n'),
+              lemmatizer.lemmatize(word, pos='v')]
+    print(formatted_text.format(*output)) 
+    
+#결과
+runfile('C:/Users/Administrator/.spyder-py3/temp.py', wdir='C:/Users/Administrator/.spyder-py3')
+
+               INPUT WORD         NOUN LEMMATIZER         VERB LEMMATIZER 
+ ===========================================================================
+                 writing                 writing                   write
+                  calves                    calf                   calve
+                      be                      be                      be
+                 branded                 branded                   brand
+                   horse                   horse                   horse
+               randomize               randomize               randomize
+                possibly                possibly                possibly
+               provision               provision               provision
+                hospital                hospital                hospital
+                    kept                    kept                    keep
+                scratchy                scratchy                scratchy
+                    code                    code                    code

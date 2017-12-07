@@ -1,6 +1,6 @@
 표제화를 통해 단어를 기본형으로 변형하기
 
-코드:
+#코드
 #Spyder 사용했습니다
 
 from nltk import *
@@ -25,7 +25,7 @@ for word in input_words:
     output=[word, porter.stem(word), lancaster.stem(word), snowball.stem(word)]
     print(formatted_text.format(*output)) 
 
-결과:
+#결과
 runfile('C:/Users/Administrator/.spyder-py3/temp.py', wdir='C:/Users/Administrator/.spyder-py3')
 
        INPUT WORD          PORTER       LANCASTER        SNOWBALL 

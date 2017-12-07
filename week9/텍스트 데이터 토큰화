@@ -1,6 +1,6 @@
 텍스트 데이터 토큰화
 
-코드:
+#코드
 #Spyder 사용했습니다
 
 from nltk import *
@@ -20,7 +20,7 @@ print("\nWord Punct Tokenizer : ")
 print(WordPunctTokenizer().tokenize(input_text)) 
 
 
-결과:
+#결과
 
 runfile('C:/Users/Administrator/.spyder-py3/temp.py', wdir='C:/Users/Administrator/.spyder-py3')
 

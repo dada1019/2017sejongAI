@@ -1,0 +1,115 @@
+import numpy as np
+import matplotlib.pyplot as plt
+import tensorflow as tf
+
+num_points = 1200
+
+data = []
+m = 0.2
+c = 0.5
+for i in range(num_points):
+
+    x = np.random.normal(0.0, 0.8)
+
+    noise = np.random.normal(0.0, 0.04)
+    y = m*x + c + noise
+    data.append([x, y])
+
+x_data = [d[0] for d in data]
+y_data = [d[1] for d in data]
+
+plt.plot(x_data, y_data, 'ro')
+plt.title('Input data')
+plt.show()
+
+W = tf.Variable(tf.random_uniform([1], -1.0, 1.0))
+b = tf.Variable(tf.zeros([1]))
+
+y = W * x_data + b
+
+loss = tf.reduce_mean(tf.square(y - y_data))
+
+optimizer = tf.train.GradientDescentOptimizer(0.5)
+train = optimizer.minimize(loss)
+
+init = tf.initialize_all_variables()
+
+sess = tf.Session()
+sess.run(init)
+
+num_iterations = 10
+for step in range(num_iterations):
+
+    sess.run(train)
+
+    print('\nITERATION', step+1)
+    print('W =', sess.run(W)[0])
+    print('b =', sess.run(b)[0])
+    print('loss =', sess.run(loss))
+
+    plt.plot(x_data, y_data, 'ro')
+
+    plt.plot(x_data, sess.run(W) * x_data + sess.run(b))
+
+    plt.xlabel('Dimension 0')
+    plt.ylabel('Dimension 1')
+    
+#결과
+runfile('C:/Users/Administrator/Desktop/code_perceptron/xor_gate.py', wdir='C:/Users/Administrator/Desktop/code_perceptron')
+Reloaded modules: and_gate, or_gate, nand_gate
+
+￼
+
+ITERATION 1
+W = 0.411611
+b = 0.4943
+loss = 0.0299225
+
+ITERATION 2
+W = 0.27754
+b = 0.498473
+loss = 0.00537442
+
+ITERATION 3
+W = 0.228692
+b = 0.500061
+loss = 0.00211544
+
+ITERATION 4
+W = 0.210894
+b = 0.500639
+loss = 0.00168278
+
+ITERATION 5
+W = 0.204409
+b = 0.50085
+loss = 0.00162534
+
+ITERATION 6
+W = 0.202046
+b = 0.500927
+loss = 0.00161771
+
+ITERATION 7
+W = 0.201185
+b = 0.500955
+loss = 0.0016167
+
+ITERATION 8
+W = 0.200871
+b = 0.500965
+loss = 0.00161656
+
+ITERATION 9
+W = 0.200757
+b = 0.500969
+loss = 0.00161655
+
+ITERATION 10
+W = 0.200715
+b = 0.50097
+loss = 0.00161654
+
+# 그래프도 나타났는데 업로드가 되지 않습니다.
+
+￼
